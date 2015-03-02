@@ -1,149 +1,32 @@
-﻿<div class="row">
-    <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-    </div>
-</div>
+﻿@{
+    ViewBag.Title = "William D Burke";
+ }
 
 <div class="row">
     <div class="large-12 columns">
-        <div class="panel">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.cshtml) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="row">
-                <div class="large-4 medium-4 columns">
-                    <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <p><a href="http://twitter.com/foundationzurb">@@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-                </div>
-            </div>
-            <div class="alert-box info">
-                <span>ASP.Net NuGet package for MVC was created by <a href="http://about.me/edcharbeneau">Ed Charbeneau</a>.</span>
-            </div>
-        </div>
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+            <h2>@ViewBag.Message</h2>
+        </hgroup>
     </div>
 </div>
 <div class="row">
-    <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-        <div class="row">
-            <div class="large-12 columns">
-                <div class="callout panel">
-                    <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-6 medium-6 columns">
-                <div class="callout panel">
-                    <p>Six columns</p>
-                </div>
-            </div>
-            <div class="large-6 medium-6 columns">
-                <div class="callout panel">
-                    <p>Six columns</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                    <p>Four columns</p>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                    <p>Four columns</p>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                    <p>Four columns</p>
-                </div>
-            </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-12.columns" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-4 medium-4 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-4.columns" />
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-4.columns" />
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <div class="row collapse">
-                        <label>Input Label</label>
-                        <div class="small-9 columns">
-                            <input type="text" placeholder="small-9.columns" />
-                        </div>
-                        <div class="small-3 columns">
-                            <span class="postfix">.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Select Box</label>
-                    <select>
-                        <option value="husker">Husker</option>
-                        <option value="starbuck">Starbuck</option>
-                        <option value="hotdog">Hot Dog</option>
-                        <option value="apollo">Apollo</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-6 medium-6 columns">
-                    <label>Choose Your Favorite</label>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-                </div>
-                <div class="large-6 medium-6 columns">
-                    <label>Check these out</label>
-                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Textarea Label</label>
-                    <textarea placeholder="small-12.columns"></textarea>
-                </div>
-            </div>
-        </form>
+    <div class="large-3 columns">
+        <div class="img-filler"></div>
     </div>
-    <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p>
-            <a href="#" class="small button">Simple Button</a><br />
-            <a href="#" class="small radius button">Radius Button</a><br />
-            <a href="#" class="small round button">Round Button</a><br />
-            <a href="#" class="medium success button">Success Btn</a><br />
-            <a href="#" class="medium alert button">Alert Btn</a><br />
-            <a href="#" class="medium secondary button">Secondary Btn</a>
-        </p>
-        <div class="panel">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
-    </div>
+    <div class="large-9 columns">
+        <article>
+            <p>
+                I am proud to say that I was adopted by the Burke family in 1986 and have lived all my life in the glorious state of Texas. My current interests include electronic music, photography, cars and vehicle modification, web design, consulting and technology, animals and generally living life to the fullest.
+            </p>
+            <h3>Work and Professional</h3>
+            <p>
+                Upon graduation I was lucky enough to be Selected by Sogeti USA as a consultant in their application development in new technology practice. For the 2014 calendar year I re-enrolled in the Microsoft Practice in order to leverage the training available to grow my skills as a developer and consultant alike. In my down time I continue to keep up with web technology and social media in order to stay on top of what is out there.
+            </p>
+            <h3>Academics and Outlook</h3>
+            <p>
+                I am a recent graduate of the Univeristy of Houston C.T. Bauer College of Business with a degree in Management Information Systems. I am an alumni of the Management Information Systems Student Organization, Accounting Society, and the Hispanic Business Student Association. I was an active member in all 3 over the course of 3 semesters even securing a position as an officer in the Accounting Society for the Spring 2013 semester. Over the course of my undergrad I have seen many of my projects for project management fail and through those failures I have managed to come to an understanding of what caused mine and my team's issues. Although my Project Management endeavors blew up in my face, that did not deter me from enrolling in the IT Consulting course in fall 2012 and performing well above my own expections. I would one day like to return to the university to pursue a Masters or MBA however for the time being I am content with purusing the Microsoft certifcations along with other similar professional certifications.
+            </p>
+        </article>
+   </div>
 </div>

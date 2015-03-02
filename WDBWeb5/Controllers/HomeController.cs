@@ -10,14 +10,14 @@ namespace WDBWeb5.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = "Your friendly Austin-based IT Consultant.";
 
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "To make a short story long.";
 
             return View();
         }

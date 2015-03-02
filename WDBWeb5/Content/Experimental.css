@@ -1,0 +1,8 @@
+/*Everything in this file will need to be replaced in Site.scss*/
+/* line 2, ../sass/Experimental.scss */
+.img-filler {
+  height: 300px;
+  width: 175px;
+  margin: 10px;
+  background-color: #228b22;
+}

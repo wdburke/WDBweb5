@@ -1,4 +1,3 @@
-using System.Web;
 using System.Web.Optimization;
 
 namespace WDBWeb5
@@ -19,11 +18,27 @@ namespace WDBWeb5
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new StyleBundle("~/bundles/style").Include(
+                        "~/Content/Site.css",
+                        "~/Content/Experimental.css"
+                        ));
+
             #region Foundation Bundles
+            bundles.Add(new StyleBundle("~/Content/foundation/css").Include(
+                    "~/Content/foundation/foundation.css",
+                    "~/Content/foundation/foundation.mvc.css",
+                    "~/Content/foundation/app.css"
+                ));
 
-            bundles.Add(Foundation.Styles());
 
-            bundles.Add(Foundation.Scripts());
+            bundles.Add(new ScriptBundle("~/bundles/foundation").Include(
+                      "~/Scripts/foundation/fastclick.js",
+                      "~/Scripts/jquery.cookie.js",
+                      "~/Scripts/foundation/foundation.js",
+                      "~/Scripts/foundation/foundation.*",
+                      "~/Scripts/foundation/app.js"
+                      
+                 ));
 
             #endregion
         }
