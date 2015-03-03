@@ -37,7 +37,6 @@ namespace WDBWeb5
                       "~/Scripts/foundation/foundation.js",
                       "~/Scripts/foundation/foundation.*",
                       "~/Scripts/foundation/app.js"
-                      
                  ));
 
             #endregion

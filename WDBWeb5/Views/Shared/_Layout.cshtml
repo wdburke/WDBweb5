@@ -17,6 +17,7 @@
 
 </head>
 <body>
+    @Html.Partial("_Menu")
     @RenderBody()
     @Html.Partial("_Footer")
 @Scripts.Render("~/bundles/jquery")
@@ -24,7 +25,5 @@
     <script>
         $(document).foundation();
     </script>
-    @RenderSection("scripts", required: false)
-
 </body>
 </html>
